@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 60px;
+    background-color: white;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header>div p{
+    font-size: 30px;
+}
+
+header>div p span{
+    padding: 5px;
+    letter-spacing: 5px;
+}
+
+
+
+header {
+    div{
+        p{
+            span:hover{
+                background-color: red;
+            }
+        }
+    }
+
+    ul{
+        display: flex;
+        li{
+            margin: 10px;
+            font-size: 20px;
+            a{
+                color: black;
+            }
+        }
+    }
+}
+
+
+main{
+    /* background-color: yellow; */
+    min-height: 100vh;
+    padding-top: 60px;
+    
+}
+
+.container{
+    background-image: url('https://panahlimurad.github.io/Arthitec-site/img/architect.jpg');
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo p{
+    margin: 5px;
+    font-size: 40px;
+    letter-spacing: 10px;
+    color: white;
+}
+
+.logo p:first-child{
+    padding: 10px;
+    background-color: grey;
+}
+
+
+
+#projects{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#projects .sec-header{
+    border-bottom: 1px solid rgb(102, 102, 102);
+    padding: 20px;
+}
+
+#projects>div h2{
+    margin-left: 20px;
+    font-size: 30px;
+    margin: 10px;
+}
+
+#projects .items{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1% 10%;
+}
+
+.card{
+    background-image: url('https://res.cloudinary.com/brickandbatten/images/f_auto,q_auto/v1675439478/wordpress_assets/SmallHouseExteriors-Twitter-card-B-LOGO/SmallHouseExteriors-Twitter-card-B-LOGO.jpg?_i=AA');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    width: 270px;
+    height: 200px;
+    margin: 20px;
+    position: relative;
+    justify-self: flex-start;
+}
+
+.card .type{
+    position: absolute;
+    background-color: black;
+    padding: 10px;
+    top: -10px;
+    left: -10px;
+}
+
+.type p{
+    color: white;
+}
+
+
+
+
+footer{
+    height: 100px;
+
+}
