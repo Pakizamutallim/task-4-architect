@@ -20,6 +20,7 @@ header{
 
 header>div p{
     font-size: 30px;
+    letter-spacing: 8px;
 }
 
 header>div p span{
@@ -27,32 +28,25 @@ header>div p span{
     letter-spacing: 5px;
 }
 
+header>div p span:hover{
+    background-color: red;
+}
 
+header ul{
+    display: flex;
+}
 
-header {
-    div{
-        p{
-            span:hover{
-                background-color: red;
-            }
-        }
-    }
+header ul li{
+    margin: 10px;
+    font-size: 20px;
+}
 
-    ul{
-        display: flex;
-        li{
-            margin: 10px;
-            font-size: 20px;
-            a{
-                color: black;
-            }
-        }
-    }
+header ul li a{
+    color: black;
 }
 
 
 main{
-    /* background-color: yellow; */
     min-height: 100vh;
     padding-top: 60px;
     
@@ -86,15 +80,13 @@ main{
     background-color: grey;
 }
 
-
-
 #projects{
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-#projects .sec-header{
+.sec-header{
     border-bottom: 1px solid rgb(102, 102, 102);
     padding: 20px;
 }
@@ -109,6 +101,7 @@ main{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
     padding: 1% 10%;
 }
 
@@ -136,10 +129,142 @@ main{
     color: white;
 }
 
-
-
-
-footer{
-    height: 100px;
-
+#about{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
+
+#about .text-about{
+    padding: 20px;
+}
+
+.text-about p{
+    font-size: 20px;
+}
+
+.team{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card-team{
+    width: 300px;
+    margin: 15px 7px;
+    box-shadow: 1px 1px 20px black;
+}
+
+.image{
+    background-image: url('https://www.perfocal.com/blog/content/images/2021/01/Perfocal_17-11-2019_TYWFAQ_100_standard-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    /* flex-grow: 5; */
+}
+
+.about-member{
+    padding: 10px;
+}
+
+.about-member *{
+    margin: 8px 0;
+}
+
+.about-member h3{
+    font-size: 25px;
+}
+
+.about-member h4{
+    font-size: 20px;
+}
+
+.btn-contact{
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 0;
+    flex-grow: 2;
+    background-color: rgb(182, 179, 179);
+}
+
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form {
+    margin: 10px;
+}
+
+#contact form .form-input input{
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+}
+
+input:hover{
+    border-color: blue;
+}
+
+
+form .btn{
+    padding: 10px;
+    margin: 23px;
+    background-color: transparent;
+    border-radius: 20px;
+    color: darkblue;
+    font-weight: bolder;
+    border: none;
+    box-shadow: 0 0 5px blue;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+    transition: .5s;
+    transform: scale(1.5);
+}
+
+.footer-photo{
+    background-image: url('https://panahlimurad.github.io/Arthitec-site/img/maps.jpg');
+    height: 90vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@media screen and (max-width: 524px) {
+    header{
+        padding: 10px 30px;
+    }
+    header>div p {
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
+    ul li{
+        padding: 2px;
+    }
+    ul li a{
+        font-size: 15px;
+    }
+    .logo p{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    header{
+        padding: 10px 60px;
+    }
+    header ul{
+        display: none;
+    }
+}
+
+
+
